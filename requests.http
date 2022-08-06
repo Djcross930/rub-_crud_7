@@ -1,3 +1,14 @@
 GET http://localhost:3000/cats
 ###
 GET http://localhost:3000/cats/1
+
+###
+
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+  "name": "doug",
+  "species": "bulldog",
+  "age": 8
+}

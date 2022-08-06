@@ -9,5 +9,14 @@ class CatsController < ApplicationController
     cat = Cat.find_by(id: params[:id])
     render json: cat.as_json
   end
+  
+  def create
+    cat = Cat.new
+    cat.name = params[:name]
+    cat.species = params[:species]
+    cat.age = params[:age]
+    cat.save
+    render json: cat.as_json
+  end
 
 end
