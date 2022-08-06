@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/cats" => "cats#index"
   get "/cats/:id" => "cats#show"
   post "/cats" => "cats#create"
+  patch "/cats/:id" => "cats#update"
 end

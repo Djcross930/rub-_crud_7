@@ -19,4 +19,13 @@ class CatsController < ApplicationController
     render json: cat.as_json
   end
 
+  def update
+    cat = Cat.find_by(id: params[:id])
+    cat.name = params[:name] || cat.name
+    cat.species = params[:species] || cat.species
+    cat.age = params[:age] || cat.age
+    cat.save
+    render json: cat.as_json
+  end
+
 end
