@@ -21,3 +21,7 @@ Content-Type: application/json
 {
   "name": "dougy"
 }
+
+###
+
+DELETE http://localhost:3000/cats/4
