@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post "/cats" => "cats#create"
   patch "/cats/:id" => "cats#update"
   delete "/cats/:id" => "cats#destroy"
+  get "/foods" => "foods#index"
 end
