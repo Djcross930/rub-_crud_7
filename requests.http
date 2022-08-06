@@ -1,0 +1,3 @@
+GET http://localhost:3000/cats
+###
+GET http://localhost:3000/cats/1
